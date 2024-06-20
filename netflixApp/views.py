@@ -32,7 +32,7 @@ def index_view(request):
 
     search_form = SearchForm()
     # We return the response with the data
-    return render(request, 'index.html', {
+    return render(request, 'full_index_light.html', {
         'data': data.items(),
         'search_form': search_form
     })
